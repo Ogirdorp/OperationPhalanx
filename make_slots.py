@@ -18,43 +18,43 @@ class Vector:
 spawns = dict(
 	det5 = dict(
 		azimuth = 240,
-		pos = Vector(0594,1189),
+		pos = Vector(594,1189),
 		limit = 'x',
 		max = 2,
 	),
 	ana = dict(
 		azimuth = 403,
-		pos = Vector(0580,1121),
+		pos = Vector(580,1121),
 		limit = 'y',
 		max = 10,
 	),
 	marines = dict(
 		azimuth = 224,
-		pos = Vector(0608,1150),
+		pos = Vector(608,1150),
 		limit = 'y',
 		max = 10,
 	),
 	ukbaf = dict(
 		azimuth = 264,
-		pos = Vector(0595,1131),
+		pos = Vector(595,1131),
 		limit = 'y',
 		max = 10,
 	),
 	abe = dict(
 		azimuth = 224,
-		pos = Vector(0604,1153),
+		pos = Vector(604,1153),
 		limit = 'y',
 		max = 10,
 	),
 	acr = dict(
 		azimuth = 123,
-		pos = Vector(0608,1157),
+		pos = Vector(608,1157),
 		limit = 'y',
 		max = 10,
 	),
 	cdn = dict(
 		azimuth = 220,
-		pos = Vector(0584,1148),
+		pos = Vector(584,1148),
 		limit = 'y',
 		max = 2,
 	),
@@ -294,13 +294,13 @@ teams['SGPF'] = dict(
 	]
 )
 
-mish = Reader('KingsHorses.Chernarus_Summer/mission.sqm').read()
+mish = Reader(os.path.join(cfg.mish,'mission.sqm')).read()
 top_id = id_count = mish.nextid()
 g_count = mish('Mission')('Groups')['items']
 
 fh = open('slots.txt', 'w')
 
-kys = ['pubs','company_hq','rifles','weapons','tanks','soar','det5','sfqc']
+kys = ['SGPF','ACR','ukbaf','company_hq','rifles','soar','det5','sfqc']
 
 for team in kys:
 	for grp in teams[team]['groups']:

@@ -49,8 +49,8 @@ def test():
 	
 if arg == 'core':
 	make_core()
-elif arg == '3d':
-	run("make_3d")
+#elif arg == '3d':
+#	run("make_3d")
 elif arg == 'slots':
 	run("make_slots")
 elif arg == 'crates':
@@ -67,6 +67,6 @@ else:
 	make_core()
 	run("make_loads")
 	run("make_crates")
-	run("make_3d")
+#	run("make_3d")
 	run("make_slots")
 	install()
