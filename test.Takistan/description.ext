@@ -1,0 +1,13 @@
+
+disabledAI = 1;
+enableDebugConsole = 1;
+
+author = "Spearhead"; // Author
+onLoadName = "Rising Scimitar Campaign"; // Mission name (temporary solution; actual name set in editor will be used later in the alpha)
+onLoadMission = "The Rise of the CSAT Empire"; // Description
+
+class CfgFunctions
+{
+#include "sux_load\cfgFunctions.hpp"
+
+};
