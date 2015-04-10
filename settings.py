@@ -1,6 +1,6 @@
 version = 1
 
-name = "RisingScimitar"
+name = "Rising Scimitar"
 safe_name = "RisingScimitar"
 map_name = "Takistan"
 
