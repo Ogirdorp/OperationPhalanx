@@ -18,43 +18,43 @@ class Vector:
 spawns = dict(
 	det5 = dict(
 		azimuth = 240,
-		pos = Vector(594,1189),
+		pos = Vector(5943,11898),
 		limit = 'x',
 		max = 2,
 	),
 	ana = dict(
 		azimuth = 403,
-		pos = Vector(580,1121),
+		pos = Vector(5802,11212),
 		limit = 'y',
 		max = 10,
 	),
 	marines = dict(
 		azimuth = 224,
-		pos = Vector(608,1150),
+		pos = Vector(6086,11504),
 		limit = 'y',
 		max = 10,
 	),
 	ukbaf = dict(
 		azimuth = 264,
-		pos = Vector(595,1131),
+		pos = Vector(5957,11315),
 		limit = 'y',
 		max = 10,
 	),
 	abe = dict(
 		azimuth = 224,
-		pos = Vector(604,1153),
+		pos = Vector(6045,11539),
 		limit = 'y',
 		max = 10,
 	),
 	acr = dict(
 		azimuth = 123,
-		pos = Vector(608,1157),
+		pos = Vector(6083,11573),
 		limit = 'y',
 		max = 10,
 	),
 	cdn = dict(
 		azimuth = 220,
-		pos = Vector(584,1148),
+		pos = Vector(5845,11482),
 		limit = 'y',
 		max = 2,
 	),
@@ -105,7 +105,7 @@ teams['sfqc'] = dict(
 	],
 )
 
-teams['soar'] = dict(
+teams['soar_2009'] = dict(
 	spawn = 'cdn',
 	name = 'USAF',
 	side = 'WEST',
@@ -132,7 +132,7 @@ teams['soar'] = dict(
 
 teams['company_hq'] = dict(
 	spawn = 'marines',
-	name = 'A CO',
+	name = 'A Co',
 	side = 'WEST',
 	faction = 'marines',
 	groups = [
@@ -146,7 +146,7 @@ teams['company_hq'] = dict(
 )
 teams['rifles'] = dict(
 	spawn = 'marines',
-	name = '1ST PLATOON',
+	name = '1st Platoon',
 	side = 'WEST',
 	faction = 'marines',
 	groups = [
@@ -162,7 +162,7 @@ teams['rifles'] = dict(
 	],
 )
 
-for i in range(1,2):
+for i in range(1,3):
 	teams['rifles']['groups'].append([
 		{ 'role': "Squad Leader", 'loadout': 'marine_sl', 'callsign': 'MUSTANG 1-%d' % i },
 		
@@ -184,7 +184,7 @@ for i in range(1,2):
 
 teams['ukbaf'] = dict(
 	spawn = 'ukbaf',
-	name = 'Wpns Plt.',
+	name = 'Lovat Scouts',
 	side = 'WEST',
 	faction = 'ukbaf',
 	groups = [
@@ -207,13 +207,39 @@ for i in range(1,3):
 		{ 'role': "Driver/Radio Operator", 'loadout': 'ukbaf_signaller' },
 		{ 'role': "Scout Observer", 'loadout': 'ukbaf_longrange' },
 	])
+	
+teams['abe'] = dict(
+	spawn = 'abe',
+	name = '20th ABE.',
+	side = 'WEST',
+	faction = 'abe',
+	groups = [
+		# abe hq
+		[
+			{ 'role': "Company Commander", 'loadout': 'abe_sl', 'callsign': 'BULLDOG 1-6', },
+			{ 'role': "Company Sergeant", 'loadout': 'abe_sl', 'callsign': 'BULLDOG 1-7', },
+			{ 'role': "Corpsman", 'loadout': 'abe_corpsman', 'medic': 1},
+			{ 'role': "Corpsman", 'loadout': 'abe_corpsman', 'medic': 1},
+		],
+	],
+)
+
+for i in range(1,3):
+	teams['abe']['groups'].append([
+		{ 'role': "Squad Leader", 'loadout': 'abe_tl', 'callsign': 'BULLDOG 1-%d' % i, },
+		
+		{ 'role': "Team Leader", 'loadout': 'abe_tl', 'callsign': 'BULLDOG 1-%d-G' % i },
+		{ 'role': "Combat Engineer", 'loadout': 'abe_gunner' },
+		{ 'role': "Combat Engineer", 'loadout': 'abe_rifleman' },
+		{ 'role': "Combat Engineer/Driver", 'loadout': 'abe_rifleman' },
+	])
 
 	
 teams['ACR'] = dict(
 	spawn = 'acr',
-	name = 'ARMORED PLATOON.',
+	name = '1st Armored Division.',
 	side = 'WEST',
-	faction = 'usarmy',
+	faction = 'acr',
 	groups = [		
 		# tank platoon
 		[
@@ -233,64 +259,47 @@ teams['ACR'] = dict(
 
 teams['SGPF'] = dict(
 	spawn = 'ana',
-	name = 'ANA',
+	name = 'Afghan National Army',
 	faction = 'ana',
 	side = 'WEST',
 	groups = [
 		# pubbie hq
 		[
-			{ 'role': "Platoon Leader", 'loadout': 'cdf_pl', 'callsign': 'HOMELAND 1-6', },
-			{ 'role': "Assistant Platoon Leader", 'loadout': 'cdf_rto', 'callsign': 'HOMELAND 1-7', },
+			{ 'role': "Platoon Leader", 'loadout': 'ana_pl', 'callsign': 'RAHIM 1-6', },
+			{ 'role': "Assistant Platoon Leader", 'loadout': 'ana_rto', 'callsign': 'RAHIM 1-7', },
 		],
 		[
-			{ 'name': '3ACR', 'role': "SL / BMP-1 Commander", 'loadout': 'cdf_asl_gunner', 'callsign': 'THUNDER 1-1'},
-			{ 'name': '3ACR', 'role': "BMP-1 Driver", 'loadout': 'cdf_crew', },
-			{ 'name': '3ACR', 'role': "BMP-1 Gunner", 'loadout': 'cdf_asl_gunner', },
-			{ 'role': "Senior Rifleman", 'loadout': 'cdf_tl', 'callsign': 'HOMELAND 1-1'},
-			{ 'role': "Machine Gunner", 'loadout': 'cdf_mg', },
-			{ 'role': "Medic", 'loadout': 'cdf_medic', 'medic': 1},
-			{ 'role': "Grenadier", 'loadout': 'cdf_grenadier' },
-			{ 'role': "Asst. Grenadier", 'loadout': 'cdf_grenadier' },
-			{ 'role': "Rifleman", 'loadout': 'cdf_rifleman' },
+			{ 'role': "Senior Rifleman", 'loadout': 'ana_tl', 'callsign': 'RAHIM 1-1'},
+			{ 'role': "Machine Gunner", 'loadout': 'ana_mg', },
+			{ 'role': "Medic", 'loadout': 'ana_medic', 'medic': 1},
+			{ 'role': "Grenadier", 'loadout': 'ana_grenadier' },
+			{ 'role': "Asst. Grenadier", 'loadout': 'ana_grenadier' },
+			{ 'role': "Rifleman", 'loadout': 'ana_rifleman' },
 		],
 		[
-			{ 'name': '3ACR', 'role': "SL / BMP-1 Commander", 'loadout': 'cdf_asl_gunner', 'callsign': 'THUNDER 1-2'},
-			{ 'name': '3ACR', 'role': "BMP-1 Driver", 'loadout': 'cdf_crew', },
-			{ 'name': '3ACR', 'role': "BMP-1 Gunner", 'loadout': 'cdf_asl_gunner', },
-			{ 'role': "Senior Rifleman", 'loadout': 'cdf_tl', 'callsign': 'HOMELAND 1-2'},
-			{ 'role': "Machine Gunner", 'loadout': 'cdf_mg', },
-			{ 'role': "Medic", 'loadout': 'cdf_medic', 'medic': 1},
-			{ 'role': "Grenadier", 'loadout': 'cdf_grenadier' },
-			{ 'role': "Asst. Grenadier", 'loadout': 'cdf_grenadier' },
-			{ 'role': "Rifleman", 'loadout': 'cdf_rifleman' },
+			{ 'role': "Senior Rifleman", 'loadout': 'ana_tl', 'callsign': 'RAHIM 1-2'},
+			{ 'role': "Machine Gunner", 'loadout': 'ana_mg', },
+			{ 'role': "Medic", 'loadout': 'ana_medic', 'medic': 1},
+			{ 'role': "Grenadier", 'loadout': 'ana_grenadier' },
+			{ 'role': "Asst. Grenadier", 'loadout': 'ana_grenadier' },
+			{ 'role': "Rifleman", 'loadout': 'ana_rifleman' },
 		],
 		[
-			{ 'name': '3ACR', 'role': "SL / BMP-1 Commander", 'loadout': 'cdf_asl_gunner', 'callsign': 'THUNDER 1-3'},
-			{ 'name': '3ACR', 'role': "BMP-1 Driver", 'loadout': 'cdf_crew', },
-			{ 'name': '3ACR', 'role': "BMP-1 Gunner", 'loadout': 'cdf_asl_gunner', },
-			{ 'role': "Senior Rifleman", 'loadout': 'cdf_tl', 'callsign': 'HOMELAND 1-3'},
-			{ 'role': "Machine Gunner", 'loadout': 'cdf_mg', },
-			{ 'role': "Medic", 'loadout': 'cdf_medic', 'medic': 1},
-			{ 'role': "Grenadier", 'loadout': 'cdf_grenadier' },
-			{ 'role': "Asst. Grenadier", 'loadout': 'cdf_grenadier' },
-			{ 'role': "Rifleman", 'loadout': 'cdf_rifleman' },
+			{ 'role': "Senior Rifleman", 'loadout': 'ana_tl', 'callsign': 'RAHIM 1-3'},
+			{ 'role': "Machine Gunner", 'loadout': 'ana_mg', },
+			{ 'role': "Medic", 'loadout': 'ana_medic', 'medic': 1},
+			{ 'role': "Grenadier", 'loadout': 'ana_grenadier' },
+			{ 'role': "Asst. Grenadier", 'loadout': 'ana_grenadier' },
+			{ 'role': "Rifleman", 'loadout': 'ana_rifleman' },
 		],
 		[
-			{ 'name': '3ACR', 'role': "SL / BMP-1 Commander", 'loadout': 'cdf_asl_gunner', 'callsign': 'THUNDER 1-4'},
-			{ 'name': '3ACR', 'role': "BMP-1 Driver", 'loadout': 'cdf_crew', },
-			{ 'name': '3ACR', 'role': "BMP-1 Gunner", 'loadout': 'cdf_asl_gunner', },
-			{ 'role': "Senior Rifleman", 'loadout': 'cdf_tl', 'callsign': 'HOMELAND 1-4'},
-			{ 'role': "Machine Gunner", 'loadout': 'cdf_mg', },
-			{ 'role': "Medic", 'loadout': 'cdf_medic', 'medic': 1},
-			{ 'role': "Grenadier", 'loadout': 'cdf_grenadier' },
-			{ 'role': "Asst. Grenadier", 'loadout': 'cdf_grenadier' },
-			{ 'role': "Rifleman", 'loadout': 'cdf_rifleman' },
+			{ 'role': "Senior Rifleman", 'loadout': 'ana_tl', 'callsign': 'RAHIM 1-4'},
+			{ 'role': "Machine Gunner", 'loadout': 'ana_mg', },
+			{ 'role': "Medic", 'loadout': 'ana_medic', 'medic': 1},
+			{ 'role': "Grenadier", 'loadout': 'ana_grenadier' },
+			{ 'role': "Asst. Grenadier", 'loadout': 'ana_grenadier' },
+			{ 'role': "Rifleman", 'loadout': 'ana_rifleman' },
 		],
-		[
-			{ 'name': '3ACR', 'role': "T-72 Commander", 'loadout': 'cdf_asl_gunner', 'callsign': 'THUNDER 2-1' },
-			{ 'name': '3ACR', 'role': "Driver", 'loadout': 'cdf_crew' },
-			{ 'name': '3ACR', 'role': "Gunner", 'loadout': 'cdf_crew' },
-		],	
 	]
 )
 
@@ -300,7 +309,7 @@ g_count = mish('Mission')('Groups')['items']
 
 fh = open('slots.txt', 'w')
 
-kys = ['SGPF','ACR','ukbaf','company_hq','rifles','soar','det5','sfqc']
+kys = ['SGPF','ACR','ukbaf','abe','company_hq','rifles','soar_2009','det5','sfqc']
 
 for team in kys:
 	for grp in teams[team]['groups']:

@@ -51,6 +51,7 @@ class marine_weapons(Crate):
 	weapons = [
 			['rhs_weap_m240B', 10],
 			['rhs_weap_XM2010_wd', 2],
+			['rhs_weap_m14ebrri', 4],
 			
 	]
 	magazines = [
@@ -62,6 +63,7 @@ class marine_weapons(Crate):
 		['rhsusf_200Rnd_556x45_soft_pouch', 300],
 		
 		['rhsusf_100Rnd_762x51', 300],
+		['rhsusf_20Rnd_762x51_m118_special_Mag', 200],
 		
 		['rhsusf_5Rnd_300winmag_xm2010', 300],
 

@@ -96,7 +96,7 @@ class ukbaf_signaller(ukbaf_leadscout):
 		]
 	class Backpack:
 		type = 'STKR_PredatorBow'
-		]
+		
 		
 class ukbaf_longrange(ukbaf_base):
 	class Primary:

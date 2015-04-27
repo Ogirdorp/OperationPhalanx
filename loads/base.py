@@ -14,15 +14,13 @@ class Base(LoadOut):
 	
 	class Uniform:
 		items = [
-			['cw_item_notepad', 1],
-			['AGM_MapTools', 1],
 			['cse_bandage_basic', 5],
 			['cse_bandageElastic', 3],
 			['cse_packing_bandage', 3],
 			['cse_Keycuffs', 1],
 			['cse_quikclot', 3],
 			['cse_tourniquet', 4],
-			['cse_earplugs_electronic', 4],
+			['cse_earplugs_electronic', 1],
 			['cse_canteen', 2],
 			['cse_MRE_CreamTomatoSoup', 2],
 		]

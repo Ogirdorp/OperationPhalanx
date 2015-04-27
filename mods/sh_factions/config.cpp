@@ -26,9 +26,9 @@ class CfgPatches
 };
 class CfgFactionClasses
 {
-	class sh_faction_cdf
+	class sh_faction_ana
 	{
-		displayName="[SH]CDF";
+		displayName="[SH]ANA";
 		icon="\sh_faction_chdkz\cfgfactionclasses_cdf_ca.paa";
 		priority=1;
 		side=0;
@@ -41,21 +41,21 @@ class CfgFactionClasses
 	class sh_faction_det5
 	{
 		displayName="[SH]DET5";
-		icon="\sh_faction_chdkz\cfgfactionclasses_cdf_ca.paa";
+		icon="\rhsusf\addons\rhsusf_main\data\usmclogo.paa";
 		priority=1;
 		side=0;
-		backpack_tf_faction_radio_api = "VTN_BP_R168KNE_FLORA";
+		backpack_tf_faction_radio_api = "tf_rt1523g_big_bwmod";
 		personal_tf_faction_radio_api = "tf_pnr1000a";
 		rifleman_tf_faction_radio_api = "tf_anprc148jem";
 		airborne_tf_faction_radio_api = "tf_mr6000l";
 	};
-	class sh_faction_sasr
+	class sh_faction_ukbaf
 	{
-		displayName="[SH]SASR";
+		displayName="[SH]UKBAF";
 		icon="\sh_faction_chdkz\cfgfactionclasses_cdf_ca.paa";
 		priority=1;
 		side=0;
-		backpack_tf_faction_radio_api = "VTN_BP_R168KNE_FLORA";
+		backpack_tf_faction_radio_api = "tf_rt1523g_big_bwmod";
 		personal_tf_faction_radio_api = "tf_pnr1000a";
 		rifleman_tf_faction_radio_api = "tf_anprc148jem";
 		airborne_tf_faction_radio_api = "tf_mr6000l";
@@ -74,7 +74,29 @@ class CfgFactionClasses
 	class sh_faction_cdn
 	{
 		displayName="[SH]CDN";
-		icon="\sh_faction_chdkz\cfgfactionclasses_cdf_ca.paa";
+		icon="\rhsusf\addons\rhsusf_main\data\usmclogo.paa";
+		priority=1;
+		side=0;
+		backpack_tf_faction_radio_api = "tf_anprc155";
+		personal_tf_faction_radio_api = "tf_anprc154";
+		rifleman_tf_faction_radio_api = "tf_fadak";
+		airborne_tf_faction_radio_api = "tf_anarc164";
+	};
+		class sh_faction_abe
+	{
+		displayName="[SH]ABE";
+		icon="\rhsusf\addons\rhsusf_main\data\usmclogo.paa";
+		priority=1;
+		side=0;
+		backpack_tf_faction_radio_api = "tf_anprc155";
+		personal_tf_faction_radio_api = "tf_anprc154";
+		rifleman_tf_faction_radio_api = "tf_fadak";
+		airborne_tf_faction_radio_api = "tf_anarc164";
+	};
+		class sh_faction_cdn
+	{
+		displayName="[SH]ACR";
+		icon="\rhsusf\addons\rhsusf_main\data\usmclogo.paa";
 		priority=1;
 		side=0;
 		backpack_tf_faction_radio_api = "tf_anprc155";
@@ -100,9 +122,9 @@ class CfgVehicles
 	class RHS_Mi8AMTSh_vvs;
 	class RHS_Mi24V_vdv;
 	class RHS_Su25SM_vvsc;
-	class sh_faction_cdf_unit : B_Soldier_F
+	class sh_faction_ana_unit : B_Soldier_F
 	{
-		faction="sh_faction_cdf";
+		faction="sh_faction_ana";
 		scope=1;
 	};
 	class sh_faction_det5_unit : B_Soldier_F
@@ -110,9 +132,9 @@ class CfgVehicles
 		faction="sh_faction_det5";
 		scope=1;
 	};
-	class sh_faction_sasr_unit : B_Soldier_F
+	class sh_faction_ukbaf_unit : B_Soldier_F
 	{
-		faction="sh_faction_sasr";
+		faction="sh_faction_ukbaf";
 		scope=1;
 	};
 	class sh_faction_marines_unit : B_Soldier_F
@@ -125,11 +147,21 @@ class CfgVehicles
 		faction="sh_faction_cdn";
 		scope=1;
 	};
+	class sh_faction_abe_unit : B_Soldier_F
+	{
+		faction="sh_faction_abe";
+		scope=1;
+	};
+	class sh_faction_acr_unit : B_Soldier_F
+	{
+		faction="sh_faction_acr";
+		scope=1;
+	};
 	class sh_cdf_bmp1 : rhs_bmp1_vv
 	{
 		scope=2;
 		side=1;
-		faction="sh_faction_cdf";
+		faction="sh_faction_ana";
 		crew="";
 		typicalCargo[]={};
 		vehicleClass="Armored";
@@ -295,7 +327,7 @@ class CfgVehicles
 	{
 		scope=2;
 		side=1;
-		faction="sh_faction_cdf";
+		faction="sh_faction_ana";
 		crew="";
 		typicalCargo[]={};
 		vehicleClass="Armored";
@@ -461,7 +493,7 @@ class CfgVehicles
 	{
 		scope=2;
 		side=1;
-		faction="sh_faction_cdf";
+		faction="sh_faction_ana";
 		crew="";
 		typicalCargo[]={};
 		vehicleClass="Support";
@@ -627,7 +659,7 @@ class CfgVehicles
 	{
 		scope=2;
 		side=1;
-		faction="sh_faction_cdf";
+		faction="sh_faction_ana";
 		crew="";
 		typicalCargo[]={};
 		vehicleClass="Support";
@@ -793,7 +825,7 @@ class CfgVehicles
 	{
 		scope=2;
 		side=1;
-		faction="sh_faction_cdf";
+		faction="sh_faction_ana";
 		crew="";
 		typicalCargo[]={};
 		vehicleClass="Support";
@@ -959,7 +991,7 @@ class CfgVehicles
 	{
 		scope=2;
 		side=1;
-		faction="sh_faction_cdf";
+		faction="sh_faction_ana";
 		crew="";
 		typicalCargo[]={};
 		vehicleClass="Car";
@@ -1125,7 +1157,7 @@ class CfgVehicles
 	{
 		scope=2;
 		side=1;
-		faction="sh_faction_cdf";
+		faction="sh_faction_ana";
 		crew="";
 		typicalCargo[]={};
 		vehicleClass="Car";
@@ -1291,7 +1323,7 @@ class CfgVehicles
 	{
 		scope=2;
 		side=1;
-		faction="sh_faction_cdf";
+		faction="sh_faction_ana";
 		crew="";
 		typicalCargo[]={};
 		vehicleClass="Car";
@@ -1457,7 +1489,7 @@ class CfgVehicles
 	{
 		scope=2;
 		side=1;
-		faction="sh_faction_cdf";
+		faction="sh_faction_ana";
 		crew="";
 		typicalCargo[]={};
 		vehicleClass="Car";
@@ -1570,132 +1602,6 @@ class CfgVehicles
 			{
 				magazine="rhs_100Rnd_762x54mmR_green";
 				count=5;
-			};
-		};
-		class TransportBackpacks
-		{
-		};
-		class TransportItems
-		{
-			class _xx_cse_bandage_basic
-			{
-				name="cse_bandage_basic";
-				count=25;
-			};
-			class _xx_cse_bandageElastic
-			{
-				name="cse_bandageElastic";
-				count=15;
-			};
-			class _xx_cse_morphine
-			{
-				name="cse_morphine";
-				count=5;
-			};
-			class _xx_cse_epinephrine
-			{
-				name="cse_epinephrine";
-				count=5;
-			};
-			class _xx_cse_saline_iv
-			{
-				name="cse_saline_iv";
-				count=5;
-			};
-			class _xx_cse_saline_iv_500
-			{
-				name="cse_saline_iv_500";
-				count=5;
-			};
-			class _xx_cse_saline_iv_250
-			{
-				name="cse_saline_iv_250";
-				count=5;
-			};
-			class _xx_cse_tourniquet
-			{
-				name="cse_tourniquet";
-				count=5;
-			};
-		};
-	};
-	class sh_marines_rg31 : ffaa_et_rg31_samson
-	{
-		scope=2;
-		side=1;
-		faction="sh_faction_marines";
-		crew="";
-		typicalCargo[]={};
-		vehicleClass="Car";
-		class TransportWeapons
-		{
-			class _xx_rhs_weap_M136
-			{
-				weapon="rhs_weap_M136";
-				count=3;
-			};
-		};
-		class TransportMagazines
-		{
-			class _xx_rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer
-			{
-				magazine="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-				count=50;
-			};
-			class _xx_rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red
-			{
-				magazine="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
-				count=25;
-			};
-			class _xx_rhsusf_100Rnd_556x45_soft_pouch
-			{
-				magazine="rhsusf_100Rnd_556x45_soft_pouch";
-				count=10;
-			};
-			class _xx_rhsusf_200Rnd_556x45_soft_pouch
-			{
-				magazine="rhsusf_200Rnd_556x45_soft_pouch";
-				count=5;
-			};
-			class _xx_rhs_mag_an_m8hc
-			{
-				magazine="rhs_mag_an_m8hc";
-				count=15;
-			};
-			class _xx_rhs_mag_m18_purple
-			{
-				magazine="rhs_mag_m18_purple";
-				count=5;
-			};
-			class _xx_rhs_mag_m18_green
-			{
-				magazine="rhs_mag_m18_green";
-				count=5;
-			};
-			class _xx_rhs_mag_m18_red
-			{
-				magazine="rhs_mag_m18_red";
-				count=5;
-			};
-			class _xx_rhs_mag_m18_yellow
-			{
-				magazine="rhs_mag_m18_yellow";
-				count=5;
-			};
-			class _xx_rhs_mag_m67
-			{
-				magazine="rhs_mag_m67";
-				count=10;
-			};
-			class _xx_SatchelCharge_Remote_Mag
-			{
-				magazine="SatchelCharge_Remote_Mag";
-				count=1;
-			};
-			class _xx_rhs_m136_mag
-			{
-				magazine="rhs_m136_mag";
-				count=3;
 			};
 		};
 		class TransportBackpacks

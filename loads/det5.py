@@ -12,7 +12,6 @@ class det5_base(base.Base):
 	items = base.Base.items + [
 		'ItemGPS',
 		'tf_microdagr',
-		'tf_anprc152_1',
 	]
 
 	class HandGun:
@@ -21,7 +20,7 @@ class det5_base(base.Base):
 		suppressor = 'RH_m9qd'
 
 	class Uniform:
-		type = 'rhs_uniform_cu_ocp_patchless'
+		type = 'U_SBE_Army_B_CombatUniform_mcam'
 		items = base.Base.Uniform.items + [
 			['cw_item_9liner_medivac', 1],
 			['cw_item_9liner_cas', 1],
@@ -31,26 +30,26 @@ class det5_base(base.Base):
 			['RH_15Rnd_9x19_M9', 1],
 		]
 	class Vest:
-		type = 'V_PlateCarrier2_rgr'
+		type = 'V_PlateCarrier1_rgr'
 		items = [
 			['rhs_mag_m67', 2],
 		]
 	class Backpack:
-		type = 'rhsusf_assault_eagleaiii_ocp'
+		type = 'B_Carryall_cbr'
 		items = [
-			['tf_anprc148jem', 2],
+			['tf_anprc152_1', 1],
 			['rhsusf_ANPVS_14', 1],
 			['alive_tablet', 1],
-			['rhs_googles_clear', 2],
+			['rhs_googles_clear', 1],
 		]
 	
 
 class rifleman_det5(det5_base):
 	class Primary:
-		weapon = 'rhs_weap_m4a1_blockII_grip2'
-		optic = 'SMA_eotech552_kf'
+		weapon = 'rhs_weap_mk18_grip2'
+		optic = 'SMA_eotech552'
 		suppressor = 'rhsusf_acc_rotex5_grey'
-		rail = 'SMA_ANPEQ15_BLK'
+		rail = 'rhsusf_acc_anpeq15'
 		mags = [
 			['rhs_mag_30Rnd_556x45_Mk318_Stanag', 30],
 		]
@@ -62,21 +61,20 @@ class rifleman_det5(det5_base):
 
 	class Backpack(det5_base.Backpack):
 		items = det5_base.Backpack.items + [
-			['ACRE_PRC152', 1],
 			['rhs_mag_30Rnd_556x45_Mk318_Stanag', 2],
 		]
 		
 class officer_det5(det5_base):
 	class Primary:
-		weapon = 'SMA_HK416vfg'
-		optic = 'SMA_eotech552_kf'
-		suppressor = 'SMA_supp1b_556'
-		rail = 'rhsusf_acc_anpeq15'
+		weapon = 'SMA_HK416GL'
+		optic = 'SMA_ELCAN_SPECTER'
+		suppressor = 'SMA_Silencer_556'
+		rail = 'SMA_ANPEQ15_BLK'
 		mags = [
 			['SMA_30Rnd_556x45_M855A1', 30],
 		]
 	class Vest(det5_base.Vest):
-		type = 'V_PlateCarrierSpec_rgr'
+		type = 'V_PlateCarrier1_rgr'
 		items = det5_base.Vest.items + [
 			['SMA_30Rnd_556x45_M855A1', 2],
 			['SMA_30Rnd_556x45_M855A1_Tracer', 2],
@@ -104,7 +102,7 @@ class sniper_det5(det5_base):
 			['SMA_20Rnd_762x51mm_M80A1_EPR', 5],
 		]
 	class Backpack(det5_base.Backpack):
-		type = 'rhsusf_assault_eagleaiii_ocp'
+		type = 'B_Carryall_cbr'
 		items = det5_base.Backpack.items + [
 			['SMA_20Rnd_762x51mm_M80A1_EPR', 2],
 			['SMA_20Rnd_762x51mm_M80A1_EPR_Tracer', 2],
@@ -115,7 +113,7 @@ class gunner_det5(det5_base):
 	headgear = 'rhsusf_opscore_03_ocp'
 	class Primary:
 		weapon = 'rhs_weap_m249_pip'
-		optic = 'SMA_eotech552_kf'
+		optic = 'SMA_eotech552'
 		mags = [
 			['rhsusf_100Rnd_556x45_soft_pouch', 100],
 		]
@@ -133,14 +131,14 @@ class gunner_det5(det5_base):
 
 class medic_det5(det5_base):
 	class Primary:
-		weapon = 'rhs_weap_m4a1_blockII_grip2'
+		weapon = 'rhs_weap_mk18_grip2'
 		optic = 'SMA_eotech552_kf'
 		suppressor = 'rhsusf_acc_rotex5_grey'
 		mags = [
 			['rhs_mag_30Rnd_556x45_Mk318_Stanag', 30],
 		]
 	class Vest(det5_base.Vest):
-		type = 'V_KORA_K_CHICOM'
+		type = 'V_PlateCarrier2_rgr'
 		items = det5_base.Vest.items + [
 			['rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red', 2],
 			['rhs_mag_30Rnd_556x45_Mk318_Stanag', 4],
@@ -151,25 +149,25 @@ class medic_det5(det5_base):
 class medic_det5_1tk(medic_det5):
 	headgear = 'rhsusf_opscore_03_ocp'
 	class Uniform(medic_det5.Uniform):
-		type = 'V_PlateCarrierSpec_rgr'
+		type = 'U_SBE_Army_B_CombatUniform_mcam'
 	class Primary(medic_det5.Primary):
-		weapon = 'rhs_weap_m4a1_blockII_grip2'
+		weapon = 'rhs_weap_mk18_grip2'
 
 class commo_det5(det5_base):
 	headgear = 'rhsusf_opscore_03_ocp'
 	class Primary:
-		weapon = 'rhs_weap_m4a1_blockII_grip2'
+		weapon = 'rhs_weap_mk18_grip2'
 		optic = 'SMA_eotech552_kf'
 		suppressor = 'rhsusf_acc_rotex5_grey'
 		mags = [
 			['rhs_mag_30Rnd_556x45_Mk318_Stanag', 30],
 		]
 	class Vest(det5_base.Vest):
-		type = 'V_PlateCarrierSpec_rgr'
+		type = 'V_PlateCarrier1_rgr'
 		items = det5_base.Vest.items + [
 			['tf_anprc148jem', 2],
 			['rhs_mag_30Rnd_556x45_Mk318_Stanag', 4],
 			['rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red', 2],
 		]
 	class Backpack:
-		type = 'rhsusf_assault_eagleaiii_ocp'
+		type = 'B_Carryall_cbr'

@@ -2,24 +2,24 @@ import base
 
 class marine_base(base.Base):
 	class NoWrite: pass
-	headgear = 'rhsusf_ach_helmet_ucp'
+	headgear = 'rhsusf_mich_helmet_marpatd'
 
 	class Primary:
 		optic = 'rhsusf_acc_ACOG'
 		rail = 'rhsusf_acc_anpeq15'
 	
 	class Uniform:
-		type = 'rhs_uniform_cu_ucp_patchless'
+		type = 'rhs_uniform_FROG01_d'
 		items = base.Base.Uniform.items + [
 		]
 	class Vest:
-		type = 'rhsusf_iotv_ucp'
+		type = 'rhsusf_spc'
 		items = [
 			['rhs_mag_m67', 2],
 			['rhs_mag_an_m8hc', 1],
 		]
 	class Backpack:
-		type = 'rhsusf_assault_eagleaiii_ucp'
+		type = 'rhsusf_assault_eagleaiii_coy'
 		items = [
 			['rhsusf_ANPVS_14', 1],
 			['rhs_mag_m67', 1],
@@ -28,7 +28,7 @@ class marine_base(base.Base):
 
 class marine_rifleman(marine_base):
 	class Primary(marine_base.Primary):
-		weapon = 'rhs_weap_m4'
+		weapon = 'rhs_weap_m16a4_carryhandle_grip_pmag'
 		mags = [
 			['rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer', 30],
 		]
@@ -77,10 +77,10 @@ class marine_sl(marine_tl):
 	binoc = 'Binocular'
 	class Backpack(marine_tl.Backpack):
 		items = marine_tl.Backpack.items + [
-			['tf_anprc152', 1],
+			['tf_anprc148jem_3', 1],
 		]
 	class Primary(marine_tl.Primary):
-		weapon = 'rhs_weap_m4a1_carryhandle_grip'
+		weapon = 'rhs_weap_m16a4_carryhandle_grip_pmag'
 	class HandGun:
 		weapon = 'RH_m9'
 		mags = [['RH_15Rnd_9x19_M9', 15]]
@@ -194,7 +194,7 @@ class marine_pl(marine_rifleman):
 
 	class Backpack(marine_rifleman.Backpack):
 		items = marine_rifleman.Backpack.items + [
-			['tf_anprc152', 2],
+			['tf_anprc148jem_3', 1],
 			['alive_tablet', 1],
 		]
 	
@@ -205,7 +205,7 @@ class marine_rto(marine_rifleman):
 		type = "tf_rt1523g_big"
 		items = marine_rifleman.Backpack.items + [
 			['alive_tablet', 1],
-			['tf_anprc152', 2],
+			['tf_anprc152', 1],
 		]
 
 class marine_corpsman(marine_rifleman):
@@ -230,5 +230,5 @@ class marine_commander(marine_rifleman):
 
 	class Backpack:		
 		items = marine_crewman.Backpack.items + [
-			['tf_anprc152', 2],
+			['tf_anprc152', 1],
 		]

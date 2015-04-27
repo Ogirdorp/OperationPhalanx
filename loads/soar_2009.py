@@ -2,36 +2,33 @@ from p4a.loadout import Crate
 from base import Base
 
 class soar_pilot(Base):
-	headgear = 'rhs_gssh18'
+	headgear = 'rhsusf_hgu56p_mask'
 	items = Base.items + [
 		'ItemGPS',
-		'tf_fadak'
 	]
 
 	class Primary:
-		weapon = 'rhs_weap_akms'
-		mags = [['rhs_30Rnd_762x39mm_tracer', 30],]
+		weapon = 'rhs_weap_m4'
+		mags = [['rhs_mag_30Rnd_556x45_Mk318_Stanag', 30],]
 
 	class HandGun:
-		weapon = 'RH_mak'
-		rail = 'RH_pmIR'
-		mags = [['RH_8Rnd_9x18_Mak', 8]]
+		weapon = 'RH_m9'
+		mags = [['RH_15Rnd_9x19_M9', 8]]
 
 	class Uniform:
-		type = 'VTN_VVS_VKK15'
+		type = 'U_B_HeliPilotCoveralls'
 		items = Base.Uniform.items + [
 			['cw_item_9liner_medivac', 1],
 			['cw_item_9liner_cas', 1],
 			['cw_item_5liner_gcff', 1],
 			['cw_item_cas_check_in_breef', 1],
-			['rhs_30Rnd_762x39mm_tracer', 2],
-			['RH_8Rnd_9x18_Mak', 2],
+			['rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red', 2],
+			['RH_15Rnd_9x19_M9', 2],
 		]
 	class Vest:
-		type = 'rhs_vest_commander'
+		type = 'V_TacVest_oli'
 		items = [
-			['rhs_mag_nspn_green', 2],
-			['tf_fadak', 1],
+			['rhs_mag_m18_green', 2],
 		]
 	class Backpack:
 		type = 'tf_anprc155'

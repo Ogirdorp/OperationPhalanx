@@ -1,3 +1,14 @@
+any = [] execVM "title.sqf";
+
+if (!isDedicated) then {
+    [] spawn {
+        waitUntil { player == player; };
+        _load_name = player getVariable 'sux_loadout';
+        [player, _load_name] call suxlo_fnc_apply_loadout;
+        player addmpeventhandler ["mprespawn", "_load = (_this select 0) getVariable 'sux_loadout'; [_this select 0, _load] call suxlo_fnc_apply_loadout;"];
+    };
+};
+
 enableSaving [false, false];
 
 CHHQ_showMarkers = true;

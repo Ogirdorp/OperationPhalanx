@@ -22,7 +22,7 @@ class empty_crate_lg_ru(Crate):
 	base = 'CUP_RUVehicleBox'
 	title = 'Empty Crate (Large)'
 
-class cdf_medical(med_supplies):
+class ana_medical(med_supplies):
 	base = 'CUP_RUBasicAmmunitionBox'
 	title = 'CDF Medical Supplies'
 
