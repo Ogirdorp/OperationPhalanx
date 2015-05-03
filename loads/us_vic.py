@@ -20,12 +20,12 @@ class us_vic(Crate):
 		['rhs_m136_mag', 3],
 	]
 	items = [
-		['cse_bandage_basic', 25],
-		['cse_bandageElastic', 15],
-		['cse_morphine', 5],
-		['cse_epinephrine', 5],
-		['cse_saline_iv', 5],
-		['cse_saline_iv_500', 5],
-		['cse_saline_iv_250', 5],
-		['cse_tourniquet', 5],	
+		['ACE_bandage_basic', 25],
+		['ACE_bandageElastic', 15],
+		['ACE_morphine', 5],
+		['ACE_epinephrine', 5],
+		['ACE_saline_iv', 5],
+		['ACE_saline_iv_500', 5],
+		['ACE_saline_iv_250', 5],
+		['ACE_tourniquet', 5],	
 	]

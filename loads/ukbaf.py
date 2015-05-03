@@ -31,20 +31,21 @@ class ukbaf_base(base.Base):
 
 class ukbaf_leadscout(ukbaf_base):
 	class Primary:
-		weapon = 'SMA_Mk17'
-		optic = 'SMA_ELCAN_SPECTER_TAN'
-		rail = 'SMA_ANPEQ15_TOP_TAN_SCAR'
+		weapon = 'UK3CB_BAF_L85A2'
+		optic = 'UK3CB_BAF_SpecterLDS_Dot'
+		suppressor = 'UK3CB_BAF_sffh'
+		rail = 'UK3CB_BAF_LLM_Flashlight'
 		mags = [
-			['SMA_20Rnd_762x51mm_M80A1_EPR', 30],
+			['UK3CB_BAF_30Rnd', 30],
 		]
 	class Vest(ukbaf_base.Vest):
 		items = ukbaf_base.Vest.items + [
-			['SMA_20Rnd_762x51mm_M80A1_EPR', 2],
+			['UK3CB_BAF_30Rnd_T', 2],
 		]
 	class Backpack(ukbaf_base.Backpack):
 		items = ukbaf_base.Backpack.items + [
-			['SMA_20Rnd_762x51mm_M80A1_EPR', 2],
-			['SMA_20Rnd_762x51mm_M80A1_EPR_Tracer', 2],
+			['UK3CB_BAF_30Rnd', 2],
+			['UK3CB_BAF_30Rnd_T', 2],
 		]
 
 class ukbaf_sl(ukbaf_leadscout):
@@ -55,20 +56,21 @@ class ukbaf_sl(ukbaf_leadscout):
 
 class ukbaf_gunner(ukbaf_leadscout):
 	class Primary:
-		weapon = 'rhs_weap_m240B'
+		weapon = 'UK3CB_BAF_L110A1'
+		rail = 'rhsusf_acc_ELCAN'
 		mags = [
-			['rhsusf_100Rnd_762x51', 100],
+			['UK3CB_BAF_100Rnd', 100],
 		]
 	class Vest:
 		type = 'STKR_Osprey_MG'
 		items = ukbaf_leadscout.Vest.items + [
-			['rhsusf_100Rnd_762x51', 1],
+			['UK3CB_BAF_100Rnd', 1],
 		]
 
 	class Backpack(ukbaf_base.Backpack):
 		items = ukbaf_base.Backpack.items + [
-			['rhsusf_100Rnd_762x51', 1],
-			['rhsusf_100Rnd_762x51_m993', 2],
+			['UK3CB_BAF_100Rnd', 1],
+			['UK3CB_BAF_100Rnd_T', 2],
 		]
 
 class ukbaf_combatmedic(ukbaf_leadscout):
@@ -79,8 +81,8 @@ class ukbaf_combatmedic(ukbaf_leadscout):
 		]
 	class Backpack(ukbaf_base.Backpack):
 		items = ukbaf_base.Backpack.items + base.MedicSupplies + [
-			['SMA_20Rnd_762x51mm_M80A1_EPR', 3],
-			['cse_personal_aid_kit', 3],
+			['UK3CB_BAF_L85A2', 3],
+			['ACE_personal_aid_kit', 3],
 		]
 
 class ukbaf_tl(ukbaf_leadscout):
@@ -101,15 +103,15 @@ class ukbaf_signaller(ukbaf_leadscout):
 class ukbaf_longrange(ukbaf_base):
 	class Primary:
 		weapon = 'rhs_weap_sr25'
-		optic = 'rhsusf_acc_LEUPOLDMK4_2'
+		optic = 'UK3CB_BAF_L86A3'
 		mags = [
-			['rhsusf_20Rnd_762x51_m118_special_Mag', 20],
+			['UK3CB_BAF_30Rnd', 20],
 		]
 	class Vest(ukbaf_base.Vest):
 		items = ukbaf_base.Vest.items + [
-			['rhsusf_20Rnd_762x51_m118_special_Mag', 2],
+			['UK3CB_BAF_30Rnd', 2],
 		]
 	class Backpack(ukbaf_base.Backpack):
 		items = ukbaf_base.Backpack.items + [
-			['rhsusf_20Rnd_762x51_m118_special_Mag', 4],
+			['UK3CB_BAF_30Rnd', 4],
 		]

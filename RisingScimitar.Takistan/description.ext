@@ -1,25 +1,35 @@
 class header {
 	gametype = COOP;
 	minplayers = 1;
-	maxplayers = 125;
+	maxplayers = 132;
 	playerCountMultipleOf = 1;  //Coop type missions use 1, Team type missions use 2
 };
+
+author = "Spearhead Gaming";
+onLoadMission = "The Rise of the CSAT Empire";
+onLoadName = "Operation Dhi'b";
 
 respawn = "BASE";
 //respawnTemplates[] = {"MenuPosition"};
 RespawnDialog = 0;
-respawnDelay  = 30;
+respawnDelay  = 25;
 aikills = 1;
 disabledAI = 1;
 enableDebugConsole=1;
 corpseManagerMode = 2;
 
-author = "Spearhead"; // Author
-onLoadName = "Rising Scimitar"; // Mission name (temporary solution; actual name set in editor will be used later in the alpha)
-onLoadMission = "The Rise of the CSAT Empire"; // Description
-
 class CfgFunctions
 {
-#include "sux_load\cfgFunctions.hpp"
-
+	#include "sux_load\cfgFunctions.hpp"
+	#include "vip_cmn\fn\vip_cmn_fnc.hpp"
+	class kh
+	{
+		class mission_stuff
+		{
+			file = "fnc";
+			class disable_sim { recompile = 1; };
+			class make_medic { recompile = 1; };
+		};
+	};
 };
+#include "R3F_LOG\desc_include.h"

@@ -25,8 +25,8 @@ class det5_base(base.Base):
 			['cw_item_9liner_medivac', 1],
 			['cw_item_9liner_cas', 1],
 			['cw_item_5liner_gcff', 1],
-			['cse_morphine', 2],
-			['cse_epinephrine', 2],
+			['ACE_morphine', 2],
+			['ACE_epinephrine', 2],
 			['RH_15Rnd_9x19_M9', 1],
 		]
 	class Vest:

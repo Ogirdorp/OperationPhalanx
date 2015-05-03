@@ -2,7 +2,7 @@ from p4a.loadout import Crate
  
 class abe_explosives(Crate):
 	title = 'ABE Explosives and CSW'
-	base = 'CUP_USSpecialWeaponsBox'
+	base = 'Box_NATO_Wps_F'
 	magazines = [
 		['rhs_mag_m67', 100],
 		['rhs_mag_an_m8hc', 100],
@@ -32,7 +32,7 @@ class abe_explosives(Crate):
  
 class abe_launchers(Crate):
 	title = 'ABE Launchers and Warheads'
-	base = 'CUP_USBasicWeaponsBox'
+	base = 'Box_NATO_Wps_F'
 	weapons = [
 		['rhs_weap_fgm148', 20],
 		['rhs_weap_M136', 400],
@@ -47,7 +47,7 @@ class abe_launchers(Crate):
 	]
 class abe_weapons(Crate):
 	title = 'ABE Rifles and Ammo'
-	base = 'CUP_USBasicWeaponsBox'
+	base = 'Box_NATO_Wps_F'
 	weapons = [
 	]
 	magazines = [
@@ -65,7 +65,7 @@ class abe_weapons(Crate):
 
 class abe_radios(Crate):
 	title = 'ABE Radios'
-	base = 'CUP_USBasicAmmunitionBox'
+	base = 'Box_NATO_Wps_F'
 	items = [
 		['tf_anprc152', 50],
 	]

@@ -6,8 +6,8 @@ class us_vic(Crate):
 		['rhs_weap_M136', 3],
 	]
 	magazines = [
-		['SMA_20Rnd_762x51mm_M80A1_EPR', 50],
-		['SMA_20Rnd_762x51mm_M80A1_EPR_Tracer', 25],
+		['UK3CB_BAF_30Rnd', 50],
+		['UK3CB_BAF_30Rnd_T', 25],
 		['rhsusf_100Rnd_762x51', 10],
 		['rhs_mag_an_m8hc', 15],
 		['rhs_mag_m18_purple', 5],
@@ -19,12 +19,12 @@ class us_vic(Crate):
 		['rhs_m136_mag', 3],
 	]
 	items = [
-		['cse_bandage_basic', 25],
-		['cse_bandageElastic', 15],
-		['cse_morphine', 5],
-		['cse_epinephrine', 5],
-		['cse_saline_iv', 5],
-		['cse_saline_iv_500', 5],
-		['cse_saline_iv_250', 5],
-		['cse_tourniquet', 5],	
+		['ACE_fieldDressing', 25],
+		['ACE_elasticBandage', 15],
+		['ACE_morphine', 5],
+		['ACE_epinephrine', 5],
+		['ACE_salineIV', 5],
+		['ACE_salineIV_250', 5],
+		['ACE_salineIV_500', 5],
+		['ACE_tourniquet', 5],	
 	]

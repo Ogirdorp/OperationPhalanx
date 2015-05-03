@@ -12,18 +12,18 @@ from loads.cse_medical import med_supplies
 cfg = Klass()
 
 class empty_crate(Crate):
-	base = 'CUP_USBasicAmmunitionBox'
+	base = 'B_supplyCrate_F'
 	title = 'Empty Crate'
 
 class empty_crate_lg(Crate):
-	base = 'CUP_USVehicleBox'
+	base = 'Box_NATO_AmmoVeh_F'
 	title = 'Empty Crate (Large)'
 class empty_crate_lg_ru(Crate):
-	base = 'CUP_RUVehicleBox'
+	base = 'Box_NATO_AmmoVeh_F'
 	title = 'Empty Crate (Large)'
 
 class ana_medical(med_supplies):
-	base = 'CUP_RUBasicAmmunitionBox'
+	base = 'Land_PlasticCase_01_large_F'
 	title = 'CDF Medical Supplies'
 
 

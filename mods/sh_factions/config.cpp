@@ -118,7 +118,6 @@ class CfgVehicles
 	class RHS_UAZ_MSV_01;
 	class rhs_ural_vv_01;
 	class rhsusf_m1a1fep_wd;
-	class ffaa_et_rg31_samson;
 	class RHS_Mi8AMTSh_vvs;
 	class RHS_Mi24V_vdv;
 	class RHS_Su25SM_vvsc;
@@ -283,42 +282,42 @@ class CfgVehicles
 		{
 			class _xx_cse_bandage_basic
 			{
-				name="cse_bandage_basic";
+				name="ACE_bandage_basic";
 				count=25;
 			};
 			class _xx_cse_bandageElastic
 			{
-				name="cse_bandageElastic";
+				name="ACE_bandageElastic";
 				count=15;
 			};
 			class _xx_cse_morphine
 			{
-				name="cse_morphine";
+				name="ACE_morphine";
 				count=5;
 			};
 			class _xx_cse_epinephrine
 			{
-				name="cse_epinephrine";
+				name="ACE_epinephrine";
 				count=5;
 			};
 			class _xx_cse_saline_iv
 			{
-				name="cse_saline_iv";
+				name="ACE_saline_iv";
 				count=5;
 			};
 			class _xx_cse_saline_iv_500
 			{
-				name="cse_saline_iv_500";
+				name="ACE_saline_iv_500";
 				count=5;
 			};
 			class _xx_cse_saline_iv_250
 			{
-				name="cse_saline_iv_250";
+				name="ACE_saline_iv_250";
 				count=5;
 			};
 			class _xx_cse_tourniquet
 			{
-				name="cse_tourniquet";
+				name="ACE_tourniquet";
 				count=5;
 			};
 		};
@@ -449,42 +448,42 @@ class CfgVehicles
 		{
 			class _xx_cse_bandage_basic
 			{
-				name="cse_bandage_basic";
+				name="ACE_bandage_basic";
 				count=25;
 			};
 			class _xx_cse_bandageElastic
 			{
-				name="cse_bandageElastic";
+				name="ACE_bandageElastic";
 				count=15;
 			};
 			class _xx_cse_morphine
 			{
-				name="cse_morphine";
+				name="ACE_morphine";
 				count=5;
 			};
 			class _xx_cse_epinephrine
 			{
-				name="cse_epinephrine";
+				name="ACE_epinephrine";
 				count=5;
 			};
 			class _xx_cse_saline_iv
 			{
-				name="cse_saline_iv";
+				name="ACE_saline_iv";
 				count=5;
 			};
 			class _xx_cse_saline_iv_500
 			{
-				name="cse_saline_iv_500";
+				name="ACE_saline_iv_500";
 				count=5;
 			};
 			class _xx_cse_saline_iv_250
 			{
-				name="cse_saline_iv_250";
+				name="ACE_saline_iv_250";
 				count=5;
 			};
 			class _xx_cse_tourniquet
 			{
-				name="cse_tourniquet";
+				name="ACE_tourniquet";
 				count=5;
 			};
 		};
@@ -615,42 +614,42 @@ class CfgVehicles
 		{
 			class _xx_cse_bandage_basic
 			{
-				name="cse_bandage_basic";
+				name="ACE_bandage_basic";
 				count=25;
 			};
 			class _xx_cse_bandageElastic
 			{
-				name="cse_bandageElastic";
+				name="ACE_bandageElastic";
 				count=15;
 			};
 			class _xx_cse_morphine
 			{
-				name="cse_morphine";
+				name="ACE_morphine";
 				count=5;
 			};
 			class _xx_cse_epinephrine
 			{
-				name="cse_epinephrine";
+				name="ACE_epinephrine";
 				count=5;
 			};
 			class _xx_cse_saline_iv
 			{
-				name="cse_saline_iv";
+				name="ACE_saline_iv";
 				count=5;
 			};
 			class _xx_cse_saline_iv_500
 			{
-				name="cse_saline_iv_500";
+				name="ACE_saline_iv_500";
 				count=5;
 			};
 			class _xx_cse_saline_iv_250
 			{
-				name="cse_saline_iv_250";
+				name="ACE_saline_iv_250";
 				count=5;
 			};
 			class _xx_cse_tourniquet
 			{
-				name="cse_tourniquet";
+				name="ACE_tourniquet";
 				count=5;
 			};
 		};
@@ -781,42 +780,42 @@ class CfgVehicles
 		{
 			class _xx_cse_bandage_basic
 			{
-				name="cse_bandage_basic";
+				name="ACE_bandage_basic";
 				count=25;
 			};
 			class _xx_cse_bandageElastic
 			{
-				name="cse_bandageElastic";
+				name="ACE_bandageElastic";
 				count=15;
 			};
 			class _xx_cse_morphine
 			{
-				name="cse_morphine";
+				name="ACE_morphine";
 				count=5;
 			};
 			class _xx_cse_epinephrine
 			{
-				name="cse_epinephrine";
+				name="ACE_epinephrine";
 				count=5;
 			};
 			class _xx_cse_saline_iv
 			{
-				name="cse_saline_iv";
+				name="ACE_saline_iv";
 				count=5;
 			};
 			class _xx_cse_saline_iv_500
 			{
-				name="cse_saline_iv_500";
+				name="ACE_saline_iv_500";
 				count=5;
 			};
 			class _xx_cse_saline_iv_250
 			{
-				name="cse_saline_iv_250";
+				name="ACE_saline_iv_250";
 				count=5;
 			};
 			class _xx_cse_tourniquet
 			{
-				name="cse_tourniquet";
+				name="ACE_tourniquet";
 				count=5;
 			};
 		};
@@ -947,42 +946,42 @@ class CfgVehicles
 		{
 			class _xx_cse_bandage_basic
 			{
-				name="cse_bandage_basic";
+				name="ACE_bandage_basic";
 				count=25;
 			};
 			class _xx_cse_bandageElastic
 			{
-				name="cse_bandageElastic";
+				name="ACE_bandageElastic";
 				count=15;
 			};
 			class _xx_cse_morphine
 			{
-				name="cse_morphine";
+				name="ACE_morphine";
 				count=5;
 			};
 			class _xx_cse_epinephrine
 			{
-				name="cse_epinephrine";
+				name="ACE_epinephrine";
 				count=5;
 			};
 			class _xx_cse_saline_iv
 			{
-				name="cse_saline_iv";
+				name="ACE_saline_iv";
 				count=5;
 			};
 			class _xx_cse_saline_iv_500
 			{
-				name="cse_saline_iv_500";
+				name="ACE_saline_iv_500";
 				count=5;
 			};
 			class _xx_cse_saline_iv_250
 			{
-				name="cse_saline_iv_250";
+				name="ACE_saline_iv_250";
 				count=5;
 			};
 			class _xx_cse_tourniquet
 			{
-				name="cse_tourniquet";
+				name="ACE_tourniquet";
 				count=5;
 			};
 		};
@@ -1113,42 +1112,42 @@ class CfgVehicles
 		{
 			class _xx_cse_bandage_basic
 			{
-				name="cse_bandage_basic";
+				name="ACE_bandage_basic";
 				count=25;
 			};
 			class _xx_cse_bandageElastic
 			{
-				name="cse_bandageElastic";
+				name="ACE_bandageElastic";
 				count=15;
 			};
 			class _xx_cse_morphine
 			{
-				name="cse_morphine";
+				name="ACE_morphine";
 				count=5;
 			};
 			class _xx_cse_epinephrine
 			{
-				name="cse_epinephrine";
+				name="ACE_epinephrine";
 				count=5;
 			};
 			class _xx_cse_saline_iv
 			{
-				name="cse_saline_iv";
+				name="ACE_saline_iv";
 				count=5;
 			};
 			class _xx_cse_saline_iv_500
 			{
-				name="cse_saline_iv_500";
+				name="ACE_saline_iv_500";
 				count=5;
 			};
 			class _xx_cse_saline_iv_250
 			{
-				name="cse_saline_iv_250";
+				name="ACE_saline_iv_250";
 				count=5;
 			};
 			class _xx_cse_tourniquet
 			{
-				name="cse_tourniquet";
+				name="ACE_tourniquet";
 				count=5;
 			};
 		};
@@ -1279,42 +1278,42 @@ class CfgVehicles
 		{
 			class _xx_cse_bandage_basic
 			{
-				name="cse_bandage_basic";
+				name="ACE_bandage_basic";
 				count=25;
 			};
 			class _xx_cse_bandageElastic
 			{
-				name="cse_bandageElastic";
+				name="ACE_bandageElastic";
 				count=15;
 			};
 			class _xx_cse_morphine
 			{
-				name="cse_morphine";
+				name="ACE_morphine";
 				count=5;
 			};
 			class _xx_cse_epinephrine
 			{
-				name="cse_epinephrine";
+				name="ACE_epinephrine";
 				count=5;
 			};
 			class _xx_cse_saline_iv
 			{
-				name="cse_saline_iv";
+				name="ACE_saline_iv";
 				count=5;
 			};
 			class _xx_cse_saline_iv_500
 			{
-				name="cse_saline_iv_500";
+				name="ACE_saline_iv_500";
 				count=5;
 			};
 			class _xx_cse_saline_iv_250
 			{
-				name="cse_saline_iv_250";
+				name="ACE_saline_iv_250";
 				count=5;
 			};
 			class _xx_cse_tourniquet
 			{
-				name="cse_tourniquet";
+				name="ACE_tourniquet";
 				count=5;
 			};
 		};
@@ -1445,42 +1444,42 @@ class CfgVehicles
 		{
 			class _xx_cse_bandage_basic
 			{
-				name="cse_bandage_basic";
+				name="ACE_bandage_basic";
 				count=25;
 			};
 			class _xx_cse_bandageElastic
 			{
-				name="cse_bandageElastic";
+				name="ACE_bandageElastic";
 				count=15;
 			};
 			class _xx_cse_morphine
 			{
-				name="cse_morphine";
+				name="ACE_morphine";
 				count=5;
 			};
 			class _xx_cse_epinephrine
 			{
-				name="cse_epinephrine";
+				name="ACE_epinephrine";
 				count=5;
 			};
 			class _xx_cse_saline_iv
 			{
-				name="cse_saline_iv";
+				name="ACE_saline_iv";
 				count=5;
 			};
 			class _xx_cse_saline_iv_500
 			{
-				name="cse_saline_iv_500";
+				name="ACE_saline_iv_500";
 				count=5;
 			};
 			class _xx_cse_saline_iv_250
 			{
-				name="cse_saline_iv_250";
+				name="ACE_saline_iv_250";
 				count=5;
 			};
 			class _xx_cse_tourniquet
 			{
-				name="cse_tourniquet";
+				name="ACE_tourniquet";
 				count=5;
 			};
 		};
@@ -1611,42 +1610,42 @@ class CfgVehicles
 		{
 			class _xx_cse_bandage_basic
 			{
-				name="cse_bandage_basic";
+				name="ACE_bandage_basic";
 				count=25;
 			};
 			class _xx_cse_bandageElastic
 			{
-				name="cse_bandageElastic";
+				name="ACE_bandageElastic";
 				count=15;
 			};
 			class _xx_cse_morphine
 			{
-				name="cse_morphine";
+				name="ACE_morphine";
 				count=5;
 			};
 			class _xx_cse_epinephrine
 			{
-				name="cse_epinephrine";
+				name="ACE_epinephrine";
 				count=5;
 			};
 			class _xx_cse_saline_iv
 			{
-				name="cse_saline_iv";
+				name="ACE_saline_iv";
 				count=5;
 			};
 			class _xx_cse_saline_iv_500
 			{
-				name="cse_saline_iv_500";
+				name="ACE_saline_iv_500";
 				count=5;
 			};
 			class _xx_cse_saline_iv_250
 			{
-				name="cse_saline_iv_250";
+				name="ACE_saline_iv_250";
 				count=5;
 			};
 			class _xx_cse_tourniquet
 			{
-				name="cse_tourniquet";
+				name="ACE_tourniquet";
 				count=5;
 			};
 		};
@@ -1737,42 +1736,42 @@ class CfgVehicles
 		{
 			class _xx_cse_bandage_basic
 			{
-				name="cse_bandage_basic";
+				name="ACE_bandage_basic";
 				count=25;
 			};
 			class _xx_cse_bandageElastic
 			{
-				name="cse_bandageElastic";
+				name="ACE_bandageElastic";
 				count=15;
 			};
 			class _xx_cse_morphine
 			{
-				name="cse_morphine";
+				name="ACE_morphine";
 				count=5;
 			};
 			class _xx_cse_epinephrine
 			{
-				name="cse_epinephrine";
+				name="ACE_epinephrine";
 				count=5;
 			};
 			class _xx_cse_saline_iv
 			{
-				name="cse_saline_iv";
+				name="ACE_saline_iv";
 				count=5;
 			};
 			class _xx_cse_saline_iv_500
 			{
-				name="cse_saline_iv_500";
+				name="ACE_saline_iv_500";
 				count=5;
 			};
 			class _xx_cse_saline_iv_250
 			{
-				name="cse_saline_iv_250";
+				name="ACE_saline_iv_250";
 				count=5;
 			};
 			class _xx_cse_tourniquet
 			{
-				name="cse_tourniquet";
+				name="ACE_tourniquet";
 				count=5;
 			};
 		};
@@ -1903,42 +1902,42 @@ class CfgVehicles
 		{
 			class _xx_cse_bandage_basic
 			{
-				name="cse_bandage_basic";
+				name="ACE_bandage_basic";
 				count=25;
 			};
 			class _xx_cse_bandageElastic
 			{
-				name="cse_bandageElastic";
+				name="ACE_bandageElastic";
 				count=15;
 			};
 			class _xx_cse_morphine
 			{
-				name="cse_morphine";
+				name="ACE_morphine";
 				count=5;
 			};
 			class _xx_cse_epinephrine
 			{
-				name="cse_epinephrine";
+				name="ACE_epinephrine";
 				count=5;
 			};
 			class _xx_cse_saline_iv
 			{
-				name="cse_saline_iv";
+				name="ACE_saline_iv";
 				count=5;
 			};
 			class _xx_cse_saline_iv_500
 			{
-				name="cse_saline_iv_500";
+				name="ACE_saline_iv_500";
 				count=5;
 			};
 			class _xx_cse_saline_iv_250
 			{
-				name="cse_saline_iv_250";
+				name="ACE_saline_iv_250";
 				count=5;
 			};
 			class _xx_cse_tourniquet
 			{
-				name="cse_tourniquet";
+				name="ACE_tourniquet";
 				count=5;
 			};
 		};
@@ -2069,42 +2068,42 @@ class CfgVehicles
 		{
 			class _xx_cse_bandage_basic
 			{
-				name="cse_bandage_basic";
+				name="ACE_bandage_basic";
 				count=25;
 			};
 			class _xx_cse_bandageElastic
 			{
-				name="cse_bandageElastic";
+				name="ACE_bandageElastic";
 				count=15;
 			};
 			class _xx_cse_morphine
 			{
-				name="cse_morphine";
+				name="ACE_morphine";
 				count=5;
 			};
 			class _xx_cse_epinephrine
 			{
-				name="cse_epinephrine";
+				name="ACE_epinephrine";
 				count=5;
 			};
 			class _xx_cse_saline_iv
 			{
-				name="cse_saline_iv";
+				name="ACE_saline_iv";
 				count=5;
 			};
 			class _xx_cse_saline_iv_500
 			{
-				name="cse_saline_iv_500";
+				name="ACE_saline_iv_500";
 				count=5;
 			};
 			class _xx_cse_saline_iv_250
 			{
-				name="cse_saline_iv_250";
+				name="ACE_saline_iv_250";
 				count=5;
 			};
 			class _xx_cse_tourniquet
 			{
-				name="cse_tourniquet";
+				name="ACE_tourniquet";
 				count=5;
 			};
 		};

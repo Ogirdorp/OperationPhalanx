@@ -5,7 +5,7 @@ class det5_crate(Crate):
 		super(det5_crate, self).__init__(**kwargs)
 		self.remove('all')
 	title = '5th Spetsnaz Detachment Weapons'
-	base = 'CUP_RUVehicleBox'
+	base = 'Box_NATO_Wps_F'
 	
 	weapons = [
 		['rhs_weap_rsp30_white', 100],

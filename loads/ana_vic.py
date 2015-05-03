@@ -3,16 +3,16 @@ from p4a.loadout import Crate
 class cdf_vic(Crate):
 	vehicle = True
 	weapons = [
-		['CSE_FlareWhite', 2],
-		['CSE_FlareRed', 5],
-		['CSE_FlareGreen', 5],
+		['ACE_HandFlare_White', 2],
+		['ACE_HandFlare_Red', 5],
+		['ACE_HandFlare_Green', 5],
 
 		['rhs_weap_rpg26', 5],
 	]
 	magazines = [
-		['CSE_FlareWhite', 2],
-		['CSE_FlareRed', 5],
-		['CSE_FlareGreen', 5],
+		['ACE_HandFlare_White', 2],
+		['ACE_HandFlare_Red', 5],
+		['ACE_HandFlare_Green', 5],
 		['rhs_mag_30Rnd_556x45_Mk318_Stanag', 10],
 		['rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red', 5],
 		['rhsusf_100Rnd_556x45_soft_pouch', 6],
@@ -26,12 +26,12 @@ class cdf_vic(Crate):
 		['1Rnd_HE_Grenade_shell', 10],
 	]
 	items = [
-		['cse_bandage_basic', 25],
-		['cse_bandageElastic', 15],
-		['cse_morphine', 5],
-		['cse_epinephrine', 5],
-		['cse_saline_iv', 5],
-		['cse_saline_iv_500', 5],
-		['cse_saline_iv_250', 5],
-		['cse_tourniquet', 5],	
+		['ACE_fieldDressing', 25],
+		['ACE_elasticBandage', 15],
+		['ACE_morphine', 5],
+		['ACE_epinephrine', 5],
+		['ACE_salineIV', 5],
+		['ACE_salineIV_250', 5],
+		['ACE_salineIV_500', 5],
+		['ACE_tourniquet', 5],	
 	]

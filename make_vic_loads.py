@@ -24,7 +24,6 @@ vics = [
 	"sh_cdn_mi8",
 ]
 us_vics = [
-	"sh_marines_rg31",
 	"sh_marines_m1a1",
 ]
 

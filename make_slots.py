@@ -112,7 +112,7 @@ teams['soar_2009'] = dict(
 	faction = 'cdn',
 	groups = [
 		[
-			{ 'role': "Pilot", 'loadout': 'soar_pilot', 'callsign': 'RAPTOR',},
+			{ 'role': "Pilot", 'loadout': 'soar_pilot', 'callsign': 'FALCON',},
 			{ 'role': "Pilot", 'loadout': 'soar_pilot', },
 			{ 'role': "Pilot", 'loadout': 'soar_pilot', },
 			{ 'role': "Pilot", 'loadout': 'soar_pilot', },
@@ -243,13 +243,19 @@ teams['ACR'] = dict(
 	groups = [		
 		# tank platoon
 		[
-			{ 'role': "M1A1 Platoon Leader", 'loadout': 'acr_commander' },
+			{ 'role': "M1A1 Platoon Leader", 'loadout': 'acr_commander', 'callsign': 'MADCAT 1-1', },
 			{ 'role': "Driver", 'loadout': 'acr_crewman' },
 			{ 'role': "Gunner", 'loadout': 'acr_crewman' },
 			{ 'role': "Loader", 'loadout': 'acr_crewman' },
 		],
 		[
-			{ 'role': "M1A1 Platoon Sergeant", 'loadout': 'acr_commander' },
+			{ 'role': "M1A1 Platoon Sergeant", 'loadout': 'acr_commander', 'callsign': 'MADCAT 1-2', },
+			{ 'role': "Driver", 'loadout': 'acr_crewman' },
+			{ 'role': "Gunner", 'loadout': 'acr_crewman' },
+			{ 'role': "Loader", 'loadout': 'acr_crewman' },
+		],
+		[
+			{ 'role': "M1A1 Platoon Sergeant", 'loadout': 'acr_commander', 'callsign': 'MADCAT 1-3', },
 			{ 'role': "Driver", 'loadout': 'acr_crewman' },
 			{ 'role': "Gunner", 'loadout': 'acr_crewman' },
 			{ 'role': "Loader", 'loadout': 'acr_crewman' },

@@ -14,26 +14,23 @@ class Base(LoadOut):
 	
 	class Uniform:
 		items = [
-			['cse_bandage_basic', 5],
-			['cse_bandageElastic', 3],
-			['cse_packing_bandage', 3],
-			['cse_Keycuffs', 1],
-			['cse_quikclot', 3],
-			['cse_tourniquet', 4],
-			['cse_earplugs_electronic', 1],
-			['cse_canteen', 2],
-			['cse_MRE_CreamTomatoSoup', 2],
+			['ACE_fieldDressing', 5],
+			['ACE_elasticBandage', 3],
+			['ACE_packingBandage', 3],
+			['ACE_quikclot', 3],
+			['ACE_tourniquet', 4],
+			['ACE_EarPlugs', 1],
 		]
 
 MedicSupplies = [
-	['cse_bandage_basic', 16],
-	['cse_packing_bandage', 16],
-	['cse_tourniquet', 8],
-	['cse_morphine', 4],
-	['cse_epinephrine', 4],
-	['cse_atropine', 4],
-	['cse_saline_iv_250', 4],
-	['cse_quikclot', 16],
-	['cse_surgical_kit', 1],
-	['cse_personal_aid_kit', 1],
+	['ACE_fieldDressing', 16],
+	['ACE_packingBandage', 16],
+	['ACE_tourniquet', 8],
+	['ACE_morphine', 4],
+	['ACE_epinephrine', 4],
+	['ACE_atropine', 4],
+	['ACE_salineIV_250', 4],
+	['ACE_quikclot', 16],
+	['ACE_surgicalKit', 1],
+	['ACE_personalAidKit', 1],
 ]
