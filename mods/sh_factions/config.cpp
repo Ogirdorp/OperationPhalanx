@@ -93,7 +93,7 @@ class CfgFactionClasses
 		rifleman_tf_faction_radio_api = "tf_fadak";
 		airborne_tf_faction_radio_api = "tf_anarc164";
 	};
-		class sh_faction_cdn
+	class sh_faction_acr
 	{
 		displayName="[SH]ACR";
 		icon="\rhsusf\addons\rhsusf_main\data\usmclogo.paa";
